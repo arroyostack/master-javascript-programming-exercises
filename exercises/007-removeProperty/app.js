@@ -1,3 +1,6 @@
-function removeProperty(obj, key) {
-  // your code here
+const removeProperty = (obj, key) => {
+  
+  delete obj[key];
+
+  return obj
 }

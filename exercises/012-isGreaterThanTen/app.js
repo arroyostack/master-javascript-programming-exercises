@@ -1,3 +1,3 @@
-function isGreaterThanTen(num) {
-  // your code here
-}
+const isGreaterThanTen = (num) => (
+  num > 10 ? true : false
+)

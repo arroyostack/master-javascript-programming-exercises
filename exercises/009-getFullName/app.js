@@ -1,3 +1,3 @@
-function getFullName(firstName, lastName) {
-  // your code here
-}
+const getFullName = (firstName, lastName) => (
+  firstName + ' ' + lastName
+)

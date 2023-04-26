@@ -1,3 +1,4 @@
-function addProperty(obj, key) {
-  // your code here
-}
+const addProperty = (obj, key) => {
+   obj[key] = true;
+   return  obj
+};

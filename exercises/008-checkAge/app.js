@@ -1,3 +1,5 @@
-function checkAge(name, age) {
-  // your code here
-}
+const checkAge = (name, age) => (
+  age < 21 ? 
+  `Go home, ${name}!` : 
+  `Welcome, ${name}!`
+)

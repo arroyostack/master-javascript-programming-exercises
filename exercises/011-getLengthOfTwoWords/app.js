@@ -1,3 +1,4 @@
-function getLengthOfTwoWords(word1, word2) {
-  // your code here
-}
+const getLengthOfTwoWords = (word1, word2) => (
+  [...word1, ...word2].join('').length
+)
+

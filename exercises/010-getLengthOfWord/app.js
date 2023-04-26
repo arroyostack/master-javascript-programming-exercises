@@ -1,3 +1,1 @@
-function getLengthOfWord(word) {
-  // your code here
-}
+const getLengthOfWord = (word) => word.length;

@@ -1,3 +1,4 @@
-function isLessThan(num1, num2) {
-  // your code here
-}
+const isLessThan = (num1, num2) => (
+  num2 < num1 ? true : false
+)
+
