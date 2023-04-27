@@ -1,5 +1,3 @@
-function isPersonOldEnoughToDrinkAndDrive(person) {
-  // the person object contains an "age" property inside
-  // Add your code after this line
-  
-}
+const isPersonOldEnoughToDrinkAndDrive = (person) => (
+  person.age >= 21 ? true:false
+)

@@ -1,1 +1,3 @@
-// Write your function here
+const square = (num) => (
+    Math.pow(num, 2)
+)

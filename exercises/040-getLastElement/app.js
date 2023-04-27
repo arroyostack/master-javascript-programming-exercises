@@ -1,4 +1,1 @@
-function getLastElement(array) {
-  // Add your code after this line
-  
-}
+const  getLastElement = (array) => array[array.length - 1];

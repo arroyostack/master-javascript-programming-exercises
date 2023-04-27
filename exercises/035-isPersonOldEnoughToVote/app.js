@@ -1,4 +1,3 @@
-function isPersonOldEnoughToVote(person) {
-  // Add your code after this line
-  
-}
+const isPersonOldEnoughToVote = (person) => (
+  person.age >= 18 ? true : false
+)

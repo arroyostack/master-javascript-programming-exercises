@@ -1,4 +1,3 @@
-function getNthElement(array, n) {
-  // Add your code after this line
-  
+const getNthElement = (array, n) => {
+  return array[n]
 }

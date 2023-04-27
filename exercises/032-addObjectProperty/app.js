@@ -1,4 +1,6 @@
-function addObjectProperty(obj1, key, obj2) {
-  // Add your code after this line
-
+const addObjectProperty = (obj1, key, obj2) => {
+  obj1[key] = obj2
+  return obj1
 }
+
+
