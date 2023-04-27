@@ -1,4 +1,1 @@
-function getElementsUpTo(array, n) {
-  // your code here
-  
-}
+const getElementsUpTo = (array, n) => array.slice(0, n);

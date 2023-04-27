@@ -1,3 +1,1 @@
-function computePower(num, exponent) {
-  // your code here
-}
+const computePower = (num, exponent) => Math.pow(num, exponent);

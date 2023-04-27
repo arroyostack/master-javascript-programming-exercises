@@ -1,4 +1,1 @@
-function getElementsAfter(array, n) {
-  // your code here
-  
-}
+const getElementsAfter = (array, n) => array.slice(n + 1);

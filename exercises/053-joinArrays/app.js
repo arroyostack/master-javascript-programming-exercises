@@ -1,4 +1,3 @@
-function joinArrays(arr1, arr2) {
-  // your code here
-  
-}
+const joinArrays = (arr1, arr2) => (
+  [...arr1, ...arr2]
+)

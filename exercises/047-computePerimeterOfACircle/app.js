@@ -1,4 +1,3 @@
-function computePerimeterOfACircle(radius) {
-  // your code here
-
-}
+const computePerimeterOfACircle = (radius) => (
+  radius * 2 * Math.PI
+)

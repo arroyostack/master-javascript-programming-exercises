@@ -8,6 +8,7 @@ let obj2 = {
 };
 
 function extend(obj1, obj2) {
-    // your code here
+     obj1 = {obj1, ...obj2}
+     return obj1;
 
 }

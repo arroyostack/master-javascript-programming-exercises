@@ -1,3 +1,3 @@
-function computeAreaOfACircle(radius) {
-    // your code here
-}
+const computeAreaOfACircle = (radius) => (
+    Math.PI * radius * radius
+)

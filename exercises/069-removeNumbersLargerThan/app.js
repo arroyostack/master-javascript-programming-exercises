@@ -3,7 +3,7 @@ let obj = {
     b: 2,
     c: 'montana'
 }
-function removeNumbersLargerThan(num, obj) {
-    // your code here
+const removeNumbersLargerThan = (obj, num) => (
+    Object.values(obj).
     
-}
+)

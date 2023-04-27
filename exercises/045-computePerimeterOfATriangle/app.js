@@ -1,3 +1,1 @@
-function computePerimeterOfATriangle(side1, side2, side3) {
-  // your code here
-}
+const computePerimeterOfATriangle = (side1, side2, side3) =>   side1 + side2 + side3;
