@@ -1,7 +1,6 @@
-function addToBackOfNew(arr, element) {
-    // Write your function here
-    
-}
+const addToBackOfNew = (arr, element) => (
+    [...arr, element]
+)
 
 let input = [1, 2];
 let output = addToBackOfNew(input, 3);

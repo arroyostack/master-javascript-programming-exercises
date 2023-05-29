@@ -1,1 +1,5 @@
-// Write your function here
+const getIndexOf = (char, str) => (
+
+    str.split('').findIndex(item => item === char)
+
+);
