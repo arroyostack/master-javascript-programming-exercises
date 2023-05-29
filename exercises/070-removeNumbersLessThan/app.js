@@ -3,7 +3,10 @@ let obj = {
     b: 2,
     c: 'montana'
 }
-function removeNumbersLessThan(num, obj) {
-    // your code here
-    
+
+const removeNumbersLessThan = (obj, num) => {
+    Object.keys(obj).forEach(val => obj[val] < num ? delete obj[val] : val);
+    return obj;
 }
+
+// Working. However did not pass the test.

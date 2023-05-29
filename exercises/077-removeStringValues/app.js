@@ -3,9 +3,13 @@ let obj = {
     age: 20
 }
 
-function removeStringValues(obj) {
+const removeStringValues = (obj) => {
     // your code here
-    
+    Object.keys(obj).forEach(val => typeof obj[val] === 'string' ? 
+    delete obj[val]
+    : val)
+
+    return obj
 }
 
 removeStringValues(obj);

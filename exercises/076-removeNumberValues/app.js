@@ -3,9 +3,13 @@ let obj = {
     b: 'remaining',
     c: 4
 };
-function removeNumberValues(obj) {
+const removeNumberValues = (obj) => {
     // your code here
-    
+    Object.keys(obj).forEach(val => typeof obj[val] === 'number' ? 
+    delete obj[val]
+    : val)
+
+    return obj
 }
 
 removeNumberValues(obj);
