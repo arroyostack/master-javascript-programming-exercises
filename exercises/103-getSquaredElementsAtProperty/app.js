@@ -2,8 +2,11 @@ let obj = {
   key: [2, 1, 5]
 };
 
-function getSquaredElementsAtProperty(obj, key) {
-    // your code here
+const getSquaredElementsAtProperty = (obj, key) => {
+  if (!Array.isArray(obj[key]) || !obj[key]) return [];
+
+  return obj[key].map(item => Math.pow(item, 2));
+  
 }
 
 let output = getSquaredElementsAtProperty(obj, 'key');
