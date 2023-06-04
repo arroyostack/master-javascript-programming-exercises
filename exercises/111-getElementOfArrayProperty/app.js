@@ -2,7 +2,8 @@ let obj = {
     key: ['Jamil', 'Albrey']
 };
 
-function getElementOfArrayProperty(obj, key, index) {
-    // your code here
+const getElementOfArrayProperty = (obj, key, index) => {
+    if(!obj[key]) return undefined;
+    return obj[key][index];
 
 }
