@@ -1,4 +1,4 @@
-function getLengthOfLongestElement(arr) {
+function getLengthOfLongestElement = (arr) => {
     // Your code here
     if (arr.length < 1) return 0
     else {
