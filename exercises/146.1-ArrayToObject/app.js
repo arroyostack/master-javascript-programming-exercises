@@ -1,3 +1,5 @@
-function transformFirstAndLast(array) {
-  // your code here
-}
+const transformFirstAndLast = (array) => (
+  {
+    [array[0]]: array[array.length - 1]
+  }
+)
