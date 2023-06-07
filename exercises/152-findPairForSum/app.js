@@ -1,6 +1,15 @@
-function findPairForSum(array, number){
-  
-}
+const findPairForSum = (array, sum) => {
+  let map = {},
+    results = []
 
-let pair = findPairForSum([3, 34, 4, 12, 5, 2], 9);
-console.log(pair); // --> [4, 5]
+      for (let i = 0; i < array.length; i++){
+          if (map[array[i]]){
+              results.push([map[array[i]], array[i]])
+          }else{
+              map[sum - array[i]] = array[i];
+          }
+        }
+        return results;
+  }
+
+  //Working, however test did not pass

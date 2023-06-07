@@ -1,3 +1,1 @@
-function convertObjectToList(obj) {
-  // your code here
-}
+const convertObjectToList = (obj) => Object.keys(obj).map(key => [key, obj[key]]);

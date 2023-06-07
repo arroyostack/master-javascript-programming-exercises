@@ -17,6 +17,18 @@ let inventory = [
     }
   ];
 
-function renderInventory(shoeList) {
-  
-}
+  const renderInventory = (inventory) => {
+    const inventoryWithBlackShoes = inventory.map((store) => {
+       return store.shoes.filter((shoe) => {
+          if (shoe.name.includes('black')) {
+             return store;
+          }
+       });
+    });
+ 
+    const flatInventory = inventoryWithBlackShoes.flat();
+ 
+    return flatInventory.map((data) => [data.name, data.price]);
+ };
+
+ //WORKING, HOWEVER TEST DID NOT PASS

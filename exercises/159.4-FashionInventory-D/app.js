@@ -17,6 +17,22 @@ let inventory = [
   },
 ];
 
-function getLaceNameDataForShoes(inventory) {
-    // your code here
+const getLaceNameDataForShoes = (inventory) => { 
+  let laceNameData = [];
+
+  //Loop through each item in the inventory
+  inventory.forEach(item => {
+    item.shoes.forEach(shoe => {
+      if (shoe.name.includes('lace') || shoe.name.includes('laced')) {     
+        let words = shoe.name.split(' '); 
+        
+        for (let i=0; i< words.length; i++) {
+          if (words[i].includes('lace') || words[i].includes('laced')) {
+            laceNameData.push({nameWords: words, targetWordIndex: i});
+          }
+        }
+      }
+    });
+  });
+  return laceNameData;
 }

@@ -1,3 +1,3 @@
-function listAllValues(obj) {
-  // your code here
-}
+const listAllValues = (obj) => (
+  Object.values(obj)
+);

@@ -1,5 +1,12 @@
-function flipEveryNChars(input, n) {
-    // your code here
+const flipEveryNChars = (input, n) => {
+    const output = [];
+  
+    for (let i = 0; i < input.length; i += n) {
+      output.push(input[i+1], input[i]);
+    }
+  
+    return output.join('');
+  
 }
 
 let input = 'a short example';

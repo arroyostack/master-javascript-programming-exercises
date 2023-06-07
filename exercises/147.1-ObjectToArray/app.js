@@ -1,1 +1,3 @@
-const getAllKeys = 
+const getAllKeys = (obj) => (
+    Object.keys(obj)
+);
